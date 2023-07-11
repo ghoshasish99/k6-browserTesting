@@ -23,7 +23,7 @@ export function handleSummary(data) {
 }
 
 function launchBrowser() {
-  const browser = chromium.launch({ headless: false });
+  const browser = chromium.launch({ headless: true });
   const context = browser.newContext();
   const page = context.newPage();
   return { browser, page };
